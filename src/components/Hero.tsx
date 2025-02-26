@@ -1,5 +1,5 @@
 import React from 'react'
-import { Circle } from 'lucide-react'
+import { ArrowBigRight, Circle, Clock, MoveHorizontal, MoveRight } from 'lucide-react'
 import Star from '../resource/star.png'
 import HeroPeople from "../resource/Heropeople.png"
 import { TypeAnimation } from "react-type-animation"
@@ -11,7 +11,7 @@ function Hero(): React.ReactNode {
 
             <div className="flex flex-col lg:flex-row w-full sm:mt-5 mt-10 mb-10 lg:px-20 px-4 items-center font-Krona overflow-hidden max-w-screen">
                 {/* Left Content */}
-                <div className="lg:w-1/2 w-full flex flex-col gap-12 text-center lg:text-left">
+                <div className="lg:w-1/2 w-full flex flex-col gap-8 text-center lg:text-left">
                     <div className="flex flex-col">
                         {/* <h1 className="text-red-600 text-5xl sm:text-[75px]">RIT-A-THON</h1> */}
                         <TypeAnimation
@@ -23,14 +23,14 @@ function Hero(): React.ReactNode {
                                 'Hackathon25', // Deletes 'One' and types 'Two'
                                 2500, // Waits 2s
                                 // Waits 2s
-                                 // Types 'Three' without deleting 'Two'
-                                
+                                // Types 'Three' without deleting 'Two'
+
                             ]}
                             wrapper="h1"
                             cursor={true}
                             repeat={Infinity}
-                            className='text-red-600 text-4xl sm:text-[75px]'
-                            style={{  display: 'inline-block' }}
+                            className='text-red-600 text-4xl mt-5 sm:text-[75px]'
+                            style={{ display: 'inline-block' }}
                             deletionSpeed={50}
                         />
                         <p className="mt-4 text-lg sm:text-xl">A battlefield of Algorithms and Problem Solving</p>
@@ -47,6 +47,15 @@ function Hero(): React.ReactNode {
                         </p>
                         <p className="font-semibold text-md sm:text-xl">Organized By Dept. of Computer Science & Engineering</p>
                     </div>
+
+                    <div className="mt-1 text-black">
+                        <p className="flex items-center justify-center gap-2">
+                            <Clock size={20} />
+                            March 27-28, 2025 | Starts at 9 AM
+                        </p>
+                    </div>
+
+                    <button className='p-3 w-[70%] py-3  font-inter text-white font-normal rounded-2xl bg-peek flex flex-row justify-center gap-2 transition-colors hover:bg-blue-800'> <p>Learn more</p> <MoveRight /> </button>
                 </div>
 
                 {/* Right Image Section */}
