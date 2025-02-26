@@ -4,6 +4,9 @@ import Hero from './components/Hero'
 import About from './components/About';
 import EventDetails from './components/EventDetail';
 import Categories from './components/Category';
+import Rules from './components/RulesSection';
+import Judging from './components/JudgingCriteria';
+
 
 function App(): React.ReactNode {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,6 +18,8 @@ function App(): React.ReactNode {
         <About />
         <EventDetails/>
         <Categories/>
+        <Rules/>  
+        <Judging/>
       </section>
     </>
 

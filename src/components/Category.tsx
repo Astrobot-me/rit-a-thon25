@@ -3,7 +3,7 @@ import { GraduationCap, User, Trophy, FileText, ExternalLink, BadgeInfo } from "
 
 const Categories: React.FC = () => {
   return (
-    <section id="categories" className="py-20 bg-white">
+    <section id="categories" className="py-20 bg-white sm:h-screen h-auto flex items-center">
       <div className="max-w-4xl mx-auto px-4">
         {/* Section Title */}
         <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center flex justify-center items-center gap-3 text-black font-Krona">
