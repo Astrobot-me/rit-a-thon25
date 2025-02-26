@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar"
 import Hero from './components/Hero'
 import About from './components/About';
 import EventDetails from './components/EventDetail';
+import Categories from './components/Category';
 
 function App(): React.ReactNode {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,6 +14,7 @@ function App(): React.ReactNode {
         <Hero />
         <About />
         <EventDetails/>
+        <Categories/>
       </section>
     </>
 
