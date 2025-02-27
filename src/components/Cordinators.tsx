@@ -3,12 +3,12 @@ import { Users, Briefcase, Code, UserCheck, Settings, Calendar, Megaphone, Packa
 
 const teamMembers = [
   { name: "Dr. Abhay Bhatia", role: "Faculty Coordinator", icon: Briefcase, image: "https://placehold.co/400x400" },
-  { name: "Aditya Raj", role: "Website Architect/ 2nd Year Student Coordinator", icon: Code, image: "https://placehold.co/400x400" },
-  { name: "Priyanshu Gupta", role: "Student Coordinator/ 3rd Year", icon: UserCheck, image: "https://placehold.co/400x400" },
   { name: "Ridham Inani", role: "Student Coordinator/ 3rd Year", icon: UserCheck, image: "https://placehold.co/400x400" },
+  { name: "Priyanshu Gupta", role: "Student Coordinator/ 3rd Year", icon: UserCheck, image: "https://placehold.co/400x400" },
   { name: "Sneha Agarwal", role: "Student Coordinator/ 3rd Year", icon: UserCheck, image: "https://placehold.co/400x400" },
   { name: "Riddhi Bansal", role: "Student Coordinator/ 3rd Year", icon: UserCheck, image: "https://placehold.co/400x400" },
   { name: "Shivam Shyam", role: "Student Coordinator/ 3rd Year", icon: UserCheck, image: "https://placehold.co/400x400" },
+  { name: "Aditya Raj", role: "Website Architect/ 2nd Year Student Coordinator", icon: Code, image: "https://placehold.co/400x400" },
   { name: "Harsh Raj Shukla", role: "Student Coordinator/ 2nd Year", icon: UserCheck, image: "https://placehold.co/400x400" },
   { name: "Ashwani Raj", role: "Student Coordinator/ 2nd Year", icon: UserCheck, image: "https://placehold.co/400x400" },
   { name: "Muskan Singh", role: "Student Coordinator/ 2nd Year", icon: UserCheck, image: "https://placehold.co/400x400" },

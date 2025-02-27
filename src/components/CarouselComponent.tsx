@@ -1,126 +1,195 @@
-import React, { useCallback, useEffect, useState } from "react";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
-import { ChevronLeft, ChevronRight, HistoryIcon } from "lucide-react";
+import React, { useCallback, useEffect, useState } from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
+import { ChevronLeft, ChevronRight, Trophy, Users } from 'lucide-react';
 
-const images = [
-  "https://placehold.co/500x400?text=1",
-  "https://placehold.co/500x400?text=2",
-  "https://placehold.co/500x400?text=3",
-  "https://placehold.co/500x400?text=4",
-];
-
-const SLIDE_DURATION = 4000; // 4 seconds per slide
-
-const CarouselComponent: React.FC = () => {
-  const [emblaRef, embla] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: SLIDE_DURATION })]);
+const PreviousEdition = () => {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 5000, stopOnInteraction: false })
+  ]);
+  
+  const [scrollProgress, setScrollProgress] = useState(0);
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [progress, setProgress] = useState(0);
+  const [slideCount, setSlideCount] = useState(0);
 
-  const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
-  const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
+  const onScroll = useCallback(() => {
+    if (!emblaApi) return;
+    const progress = Math.max(0, Math.min(1, emblaApi.scrollProgress()));
+    setScrollProgress(progress * 100);
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
 
-  // Update selected index & reset progress when slide changes
+  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
+
   useEffect(() => {
-    if (!embla) return;
+    if (!emblaApi) return;
     
-    const autoplay = embla.plugins().autoplay;
-    embla.on("select", () => {
-      setSelectedIndex(embla.selectedScrollSnap());
-      setProgress(0); // Reset progress when changing slides
-    });
-
-    embla.on("pointerDown", autoplay.stop);
-    embla.on("pointerUp", () => autoplay.play());
-
-  }, [embla]);
-
-  // Progress Bar Animation
-  useEffect(() => {
-    let startTime: number;
-    let frame: number;
-
-    const animateProgress = (timestamp: number) => {
-      if (!startTime) startTime = timestamp;
-      const elapsed = timestamp - startTime;
-      const percentage = (elapsed / SLIDE_DURATION) * 100;
-
-      if (percentage < 100) {
-        setProgress(percentage);
-        frame = requestAnimationFrame(animateProgress);
-      } else {
-        setProgress(100);
-      }
+    onScroll();
+    setSlideCount(emblaApi.slideNodes().length);
+    emblaApi.on('scroll', onScroll);
+    emblaApi.on('reInit', onScroll);
+    
+    return () => {
+      emblaApi.off('scroll', onScroll);
+      emblaApi.off('reInit', onScroll);
     };
+  }, [emblaApi, onScroll]);
 
-    frame = requestAnimationFrame(animateProgress);
+  const previousEditionImages = [
+    {
+      url: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      caption: "Opening Ceremony - RIT-A-THON 2024"
+    },
+    {
+      url: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      caption: "Participants Coding Through the Night"
+    },
+    {
+      url: "https://images.unsplash.com/photo-1540304453527-62f979142a17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      caption: "Team Collaboration Session"
+    },
+    {
+      url: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      caption: "Project Presentations"
+    },
+    {
+      url: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+      caption: "Award Ceremony - RIT-A-THON 2024"
+    }
+  ];
 
-    return () => cancelAnimationFrame(frame);
-  }, [selectedIndex]); // Re-run on slide change
+  const previousWinners = [
+    {
+      category: "Class A",
+      team: "CodeCrafters",
+      project: "Smart Campus Navigation System",
+      members: ["Aditya Sharma", "Priya Patel", "Vikram Singh"]
+    },
+    {
+      category: "Class B",
+      team: "TechTitans",
+      project: "AI-Powered Waste Management Solution",
+      members: ["Rahul Verma", "Ananya Gupta", "Karan Malhotra", "Neha Singh"]
+    }
+  ];
+
+  const judges = [
+    "Dr. Rajesh Kumar - Professor, IIT Roorkee",
+    "Ms. Priya Sharma - Senior Developer, Microsoft",
+    "Mr. Vikram Mehta - Founder, TechSolutions India"
+  ];
 
   return (
-    <section className="mt-10 mb-10 py-10 px-5 sm:h-screen h-auto ">
-      <div className="flex items-center justify-center mb-12 text-black">
-        <HistoryIcon className="w-12 h-12 mr-3 drop-shadow-lg" />
-        <h2 className="text-lg sm:text-4xl font-bold font-Krona sm:text-left text-center">
-          Last Edition / Hackathon 24 Flashbacks
-        </h2>
-      </div>
-
-      <div className="relative max-w-4xl mx-auto">
-        {/* Carousel */}
-        <div ref={emblaRef} className="overflow-hidden rounded-xl rounded-b-none border shadow-lg">
-          <div className="flex">
-            {images.map((src, index) => (
-              <div key={index} className="flex-[0_0_100%]">
-                <img
-                  src={src}
-                  alt={`Slide ${index + 1}`}
-                  className="w-full h-80 sm:h-80 md:h-96 object-cover rounded-xl"
-                />
-              </div>
-            ))}
+    <section id="previous-edition" className="py-20">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center font-Krona">Previous Edition Highlights</h2>
+        
+        <div className="mb-16 relative">
+          <div className="overflow-hidden" ref={emblaRef}>
+            <div className="flex">
+              {previousEditionImages.map((image, index) => (
+                <div className="min-w-0 flex-[0_0_100%] sm:flex-[0_0_80%] md:flex-[0_0_70%] relative" key={index}>
+                  <div className="mx-4 h-[300px] sm:h-[400px] md:h-[500px] relative rounded-xl overflow-hidden">
+                    <img 
+                      src={image.url} 
+                      alt={image.caption} 
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                      <p className="text-white text-lg">{image.caption}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          {/* Navigation buttons */}
+          <button 
+            className="absolute top-1/2 left-4 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full backdrop-blur-sm z-10"
+            onClick={scrollPrev}
+          >
+            <ChevronLeft size={24} />
+          </button>
+          <button 
+            className="absolute top-1/2 right-4 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full backdrop-blur-sm z-10"
+            onClick={scrollNext}
+          >
+            <ChevronRight size={24} />
+          </button>
+          
+          {/* Progress bar */}
+          <div className="mt-4 mx-auto max-w-3xl">
+            <div className="h-1 bg-gray-700 rounded-full overflow-hidden">
+              <div 
+                className="h-full bg-pamplet transition-all duration-200"
+                style={{ width: `${scrollProgress}%` }}
+              ></div>
+            </div>
+            <div className="flex justify-center mt-2 text-sm text-gray-400">
+              {selectedIndex + 1} / {slideCount}
+            </div>
           </div>
         </div>
-
-        {/* Progress Bar (Fixed) */}
-        <div className="absolute bottom-0 left-0 w-full">
-          <div className="w-full h-2 bg-gray-700">
-            <div
-              className="h-2 bg-yellow-500 transition-all"
-              style={{ width: `${progress}%` }}
-            ></div>
-          </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+          {/* Previous Winners */}
+          {/* <div className="bg-gray-800/50 p-8 rounded-xl backdrop-blur-sm">
+            <div className="flex items-center mb-6">
+              <Trophy className="w-6 h-6 text-purple-400 mr-3" />
+              <h3 className="text-2xl font-semibold">Last Year's Winners</h3>
+            </div>
+            
+            <div className="space-y-6">
+              {previousWinners.map((winner, index) => (
+                <div key={index} className="border-l-4 border-purple-500 pl-4">
+                  <h4 className="text-xl font-semibold mb-2">{winner.category}: Team {winner.team}</h4>
+                  <p className="text-purple-300 mb-2">Project: {winner.project}</p>
+                  <div className="text-gray-300">
+                    <p className="mb-1">Team Members:</p>
+                    <ul className="list-disc list-inside pl-2 text-gray-400">
+                      {winner.members.map((member, idx) => (
+                        <li key={idx}>{member}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div> */}
+          
+          {/* Judges Panel */}
+          {/* <div className="bg-gray-800/50 p-8 rounded-xl backdrop-blur-sm">
+            <div className="flex items-center mb-6">
+              <Users className="w-6 h-6 text-purple-400 mr-3" />
+              <h3 className="text-2xl font-semibold">Distinguished Judges</h3>
+            </div>
+            
+            <p className="text-gray-300 mb-4">
+              Our previous edition featured an esteemed panel of judges from academia and industry who evaluated projects based on innovation, technical complexity, design, and practical application.
+            </p>
+            
+            <ul className="space-y-3">
+              {judges.map((judge, index) => (
+                <li key={index} className="flex items-start">
+                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3"></div>
+                  <span className="text-gray-300">{judge}</span>
+                </li>
+              ))}
+            </ul>
+          </div> */}
         </div>
-
-        {/* Navigation Buttons */}
-        <button
-          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-900/70 p-3 rounded-full text-white shadow-md hover:bg-yellow-500 transition"
-          onClick={scrollPrev}
-        >
-          <ChevronLeft className="w-6 h-6" />
-        </button>
-        <button
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-900/70 p-3 rounded-full text-white shadow-md hover:bg-yellow-500 transition"
-          onClick={scrollNext}
-        >
-          <ChevronRight className="w-6 h-6" />
-        </button>
-
-        {/* Slide Indicators */}
-        <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2">
-          {images.map((_, index) => (
-            <div
-              key={index}
-              className={`w-3 h-3 rounded-full ${
-                selectedIndex === index ? "bg-yellow-500 scale-110" : "bg-gray-500"
-              } transition-all`}
-            ></div>
-          ))}
-        </div>
+        
+        {/* <div className="text-center mt-12">
+          <p className="text-gray-300 max-w-3xl mx-auto">
+            RIT-A-THON 2024 saw over 200 participants from various departments competing in a 30-hour coding marathon. 
+            The event featured workshops, mentoring sessions, and exciting challenges that pushed participants to their creative limits.
+          </p>
+        </div> */}
       </div>
     </section>
   );
 };
 
-export default CarouselComponent;
+export default PreviousEdition;
