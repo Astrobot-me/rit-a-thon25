@@ -29,7 +29,7 @@ const Coordinators = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 font-inter">
           {teamMembers.map((member, index) => (
             <div key={index} className="relative flex flex-col items-center justify-center rounded-xl overflow-hidden ">
-              <div className="h-64 overflow-hidden">
+              <div className="h-52 overflow-hidden">
                 <img src={member.image} alt={member.name} className="sm:w-full w-auto h-full object-cover  rounded-full" />
               </div>
               <div className="absolute top-4 left-4 bg-yellow-400  p-2 rounded-full shadow-md">
