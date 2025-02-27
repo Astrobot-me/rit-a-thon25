@@ -17,7 +17,7 @@ const Categories: React.FC = () => {
           <div className="bg-pamplet p-8 rounded-xl backdrop-blur-md border border-purple-500/40 shadow-lg transition-all hover:scale-105">
             <h3 className="text-2xl font-semibold mb-4 flex items-center gap-3 text-black">
               <GraduationCap className=" w-7 h-7" />
-              Class A (Beginners Level)
+              Category A (Beginners Level)
             </h3>
             <ul className="space-y-3 text-black font-inter ml-5">
               <li className="flex items-center gap-2">
@@ -38,7 +38,7 @@ const Categories: React.FC = () => {
                 href="#"
                 className="py-3 px-6 bg-purple-600 hover:bg-purple-700 rounded-lg transition-all shadow-lg flex justify-center gap-2 text-white font-medium"
               >
-                <Trophy className="w-5 h-5" /> Register for Class A 
+                <Trophy className="w-5 h-5" /> Register for Category A 
                 <ExternalLink width={20}/>
               </a>
             </div>
@@ -48,7 +48,7 @@ const Categories: React.FC = () => {
           <div className="bg-pamplet  p-8 rounded-xl backdrop-blur-md border border-yellow-500/40 shadow-lg transition-all hover:scale-105">
             <h3 className="text-2xl font-semibold mb-4 flex items-center gap-3 text-black">
               <GraduationCap className="w-7 h-7" />
-              Class B (Advanced Level)
+              Category B (Advanced Level)
             </h3>
             <ul className="space-y-3 text-black ml-5 ">
               <li className="flex items-center  gap-2">
@@ -66,10 +66,11 @@ const Categories: React.FC = () => {
             </ul>
             <div className="mt-6">
               <a
-                href="#"
+                href="https://docs.google.com/forms/d/11PSHPYg96NbF7fCgEr8cUq5D2lSBbL4BO7XxJeWuTIs/viewform?edit_requested=true&pli=1"
                 className="py-3 px-6 bg-yellow-500 hover:bg-yellow-600 rounded-lg transition-all shadow-lg flex items-center justify-center gap-2 text-black font-medium"
+                target="_blank"
               >
-                <Trophy className="w-5 h-5" /> Register for Class B <ExternalLink width={20} />
+                <Trophy className="w-5 h-5" /> Register for Category B <ExternalLink width={20} />
               </a>
             </div>
           </div>

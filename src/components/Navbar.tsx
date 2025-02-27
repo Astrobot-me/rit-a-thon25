@@ -12,8 +12,9 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, setIsMenuOpen }) => {
     { label: 'About', href: '#about' },
     { label: 'Details', href: '#details' },
     { label: 'Categories', href: '#categories' },
-    { label: 'Prizes', href: '#prizes' },
+    // { label: 'Prizes', href: '#prizes' },
     { label: 'Rules', href: '#rules' },
+    { label: 'Our Team', href: '#coordinators' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -37,7 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, setIsMenuOpen }) => {
               </a>
             ))}
             <a
-              href="#register"
+              href="#categories"
               className="px-4 py-2 bg-peek font-Krona text-sm hover:bg-white hover:text-black rounded-lg transition-colors "
             >
               Register Now
