@@ -12,7 +12,7 @@ export default {
         peek: "#1875BB",
       },
       keyframes: {
-        slideDown: {
+        slideDownNav: {
           "0%": { transform: "translateY(-10px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
         },
@@ -54,7 +54,7 @@ export default {
         },
       },
       animation: {
-        "slide-down": "slideDown 0.3s ease-in-out forwards",
+        "slide-down-nav": "slideDownNav 0.3s ease-in-out forwards",
         "fade-in": "fadeIn 0.5s ease-in",
         "fade-out": "fadeOut 0.5s ease-out",
         "slide-up": "slideUp 0.5s ease-out",

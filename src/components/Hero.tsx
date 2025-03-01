@@ -49,12 +49,12 @@ function Hero(): React.ReactNode {
                     </div>
 
                     
-                    <p className="flex sm:flex-row justify-center lg:justify-start items-center sm:gap-2 gap-0 text-md sm:text-lg text-black animate-slide-down ">
+                    <p className="flex sm:flex-row justify-center sm:justify-start items-center sm:gap-2 gap-0 text-md sm:text-lg text-sm text-black animate-slide-down ">
                         <Clock className="" width={30} /> March 27-28, 2025 | Starts at 9 AM
                     </p>
                    
                     <a href="#about">
-                    <button className='p-3 w-[70%] py-3  font-inter text-white font-normal rounded-2xl bg-peek flex flex-row justify-center gap-2 transition-colors hover:bg-blue-800'> <p>Learn more</p> <MoveRight /> </button>
+                    <button className='p-3 sm:w-[70%] w-[85%] py-3 sm:mx-0 mx-auto  font-inter text-white font-normal rounded-2xl bg-peek flex flex-row justify-center gap-2 transition-colors hover:bg-blue-800'> <p>Learn more</p> <MoveRight /> </button>
                     </a>
                 </div>
 

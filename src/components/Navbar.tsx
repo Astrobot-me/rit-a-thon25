@@ -12,8 +12,9 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, setIsMenuOpen }) => {
     { label: 'About', href: '#about' },
     { label: 'Details', href: '#details' },
     { label: 'Categories', href: '#categories' },
-    // { label: 'Prizes', href: '#prizes' },
     { label: 'Rules', href: '#rules' },
+    { label: 'Last Edition', href: '#last-edition' },
+    { label: 'FAQs', href: '#faq' },
     { label: 'Our Team', href: '#coordinators' },
     { label: 'Contact', href: '#contact' },
   ];
@@ -56,7 +57,7 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, setIsMenuOpen }) => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 transition-all duration-300 ease-in-out transform -translate-y-10 opacity-0 animate-slide-down font-inter">
+          <div className="md:hidden py-4 transition-all duration-300 ease-in-out transform -translate-y-10 opacity-0 animate-slide-down-nav font-inter">
             {navItems.map((item) => (
               <a
                 key={item.label}

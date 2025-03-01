@@ -38,43 +38,43 @@ const PreviousEdition = () => {
 
   const previousEditionImages = [
     {
-      url: "https://i.imgur.com/Asag7eF.jpeg",
+      url: "https://i.imgur.com/jnK6SFE.jpeg",
       caption: "Saraswati Vandana - Hackathon 2024"
     },
     {
-      url: "https://i.imgur.com/VPOs49R.jpeg",
+      url: "https://i.imgur.com/DcOErXX.jpeg",
       caption: "Opening Ceremony - Hackathon 2024"
     },
     {
-      url: "https://i.imgur.com/OdJbo0I.jpeg",
+      url: "https://i.imgur.com/G8TAUCK.jpeg",
       caption: "Coding through out the day - Hackathon 2024"
     },
     {
-      url: "https://i.imgur.com/lXwYlip.jpeg",
+      url: "https://i.imgur.com/GrrmZbi.jpeg",
       caption: "Hustlers Hustling - Hackathon 2024"
     },
     {
-      url: "https://i.imgur.com/QoDUc6F.jpeg",
+      url: "https://i.imgur.com/rfoco4s.jpeg",
       caption: "Judges Evaluating - Hackathon 2024"
     },
     {
-      url: "https://i.imgur.com/shbp4bq.jpeg",
+      url: "https://i.imgur.com/rdsw7b5.jpeg",
       caption: "Particpants recieving tips & tricks from DEAN Acadmics to complete their Hacks  "
     },
     {
-      url: "https://i.imgur.com/RjS1ZBW.jpeg",
+      url: "https://i.imgur.com/Rqabsnc.jpeg",
       caption: "Judges Reviewing Hacks - Hackathon 2024"
     },
     {
-      url: "https://i.imgur.com/qI376EU.jpeg",
+      url: "https://i.imgur.com/ZIaWMg0.jpeg",
       caption: "Final Evaluation Round - Hackathon 2024"
     },
     {
-      url: "https://i.imgur.com/K4wAs57.jpeg",
+      url: "https://i.imgur.com/71sn1En.jpeg",
       caption: "Category A Winner - Hackathon 2024"
     },
     {
-      url: "https://i.imgur.com/l2wL6x8.jpeg",
+      url: "https://i.imgur.com/RJgBhEP.jpeg",
       caption: "Category B Winner - Hackathon 2024"
     },
   ];
@@ -101,7 +101,7 @@ const PreviousEdition = () => {
   ];
 
   return (
-    <section id="previous-edition" className="py-20">
+    <section id="last-edition" className="py-20">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center font-Krona">Previous Edition Highlights</h2>
         

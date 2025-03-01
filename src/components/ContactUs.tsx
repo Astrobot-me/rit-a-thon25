@@ -19,6 +19,10 @@ const Contact = () => {
       name: "Aditya  Raj / 2nd Year",
       phone: "+917004433613",
     },
+    {
+      name: "Ashwani  Raj / 2nd Year",
+      phone: "+919798018523",
+    },
   ];
 
   return (
@@ -33,7 +37,7 @@ const Contact = () => {
           {coordinators.map((coordinator, index) => (
             <div
               key={index}
-              className="bg-gray-100 p-6 rounded-xl text-center shadow-md border border-gray-200 hover:shadow-lg transition-all"
+              className="bg-gray-100 p-6 rounded-xl text-center shadow-md border border-gray-200 hover:shadow-lg transition-all hover:animate-float duration-500"
             >
               <h3 className="text-xl font-semibold mb-3 text-gray-800">{coordinator.name}</h3>
               
