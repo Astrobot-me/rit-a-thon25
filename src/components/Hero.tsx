@@ -36,11 +36,11 @@ function Hero(): React.ReactNode {
                         <p className="mt-4 text-lg sm:text-xl">A battlefield of Algorithms and Problem Solving</p>
                     </div>
 
-                    <p className="flex sm:flex-row justify-center lg:justify-start items-center sm:gap-2 gap-0 text-md sm:text-2xl text-white">
+                    <p className="flex sm:flex-row justify-center lg:justify-start items-center sm:gap-2 gap-0 text-md sm:text-2xl text-white animate-fade-in  ">
                         <Circle className="text-red-600" width={20} /> 30 Hours Long Intra Hackathon
                     </p>
 
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-4 animate-slide-down">
                         <p className="text-red-600 text-4xl sm:text-5xl">
                             Hackathon <br />
                             <span className="text-black">2025</span>
@@ -48,24 +48,24 @@ function Hero(): React.ReactNode {
                         <p className="font-semibold text-md sm:text-xl">Organized By Dept. of Computer Science & Engineering</p>
                     </div>
 
-                    <div className="mt-1 text-black">
-                        <p className="flex items-center justify-center gap-2">
-                            <Clock size={20} />
-                            March 27-28, 2025 | Starts at 9 AM
-                        </p>
-                    </div>
-
+                    
+                    <p className="flex sm:flex-row justify-center lg:justify-start items-center sm:gap-2 gap-0 text-md sm:text-lg text-black animate-slide-down ">
+                        <Clock className="" width={30} /> March 27-28, 2025 | Starts at 9 AM
+                    </p>
+                   
+                    <a href="#about">
                     <button className='p-3 w-[70%] py-3  font-inter text-white font-normal rounded-2xl bg-peek flex flex-row justify-center gap-2 transition-colors hover:bg-blue-800'> <p>Learn more</p> <MoveRight /> </button>
+                    </a>
                 </div>
 
                 {/* Right Image Section */}
                 <div className="lg:w-1/2 w-full flex justify-center mt-10 lg:mt-0">
-                    <img src={HeroPeople} alt="Hackathon Image" className="max-w-full w-[80%] sm:w-[60%] lg:w-[90%] h-auto object-contain" />
+                    <img src={HeroPeople} alt="Hackathon Image" className="max-w-full w-[80%] sm:w-[60%] lg:w-[90%] h-auto object-contain animate-float" />
                 </div>
             </div>
 
             {/* Star Image Positioned Properly */}
-            <img src={Star} alt="Decorative Star" className="sm:absolute sm:flex hidden  -bottom-24 sm:-bottom-32 -right-8 sm:-right-16 -rotate-12 max-w-[80%] sm:max-w-[100%] animate-spin" />
+            <img src={Star} alt="Decorative Star" className="sm:absolute sm:flex hidden  -bottom-24 sm:-bottom-32 -right-8 sm:-right-4 -rotate-12 max-w-[80%] sm:max-w-[100%] animate-spin" />
         </section>
     )
 }

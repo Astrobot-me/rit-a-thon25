@@ -38,25 +38,45 @@ const PreviousEdition = () => {
 
   const previousEditionImages = [
     {
-      url: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      caption: "Opening Ceremony - RIT-A-THON 2024"
+      url: "https://i.imgur.com/Asag7eF.jpeg",
+      caption: "Saraswati Vandana - Hackathon 2024"
     },
     {
-      url: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      caption: "Participants Coding Through the Night"
+      url: "https://i.imgur.com/VPOs49R.jpeg",
+      caption: "Opening Ceremony - Hackathon 2024"
     },
     {
-      url: "https://images.unsplash.com/photo-1540304453527-62f979142a17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      caption: "Team Collaboration Session"
+      url: "https://i.imgur.com/OdJbo0I.jpeg",
+      caption: "Coding through out the day - Hackathon 2024"
     },
     {
-      url: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      caption: "Project Presentations"
+      url: "https://i.imgur.com/lXwYlip.jpeg",
+      caption: "Hustlers Hustling - Hackathon 2024"
     },
     {
-      url: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      caption: "Award Ceremony - RIT-A-THON 2024"
-    }
+      url: "https://i.imgur.com/QoDUc6F.jpeg",
+      caption: "Judges Evaluating - Hackathon 2024"
+    },
+    {
+      url: "https://i.imgur.com/shbp4bq.jpeg",
+      caption: "Particpants recieving tips & tricks from DEAN Acadmics to complete their Hacks  "
+    },
+    {
+      url: "https://i.imgur.com/RjS1ZBW.jpeg",
+      caption: "Judges Reviewing Hacks - Hackathon 2024"
+    },
+    {
+      url: "https://i.imgur.com/qI376EU.jpeg",
+      caption: "Final Evaluation Round - Hackathon 2024"
+    },
+    {
+      url: "https://i.imgur.com/K4wAs57.jpeg",
+      caption: "Category A Winner - Hackathon 2024"
+    },
+    {
+      url: "https://i.imgur.com/l2wL6x8.jpeg",
+      caption: "Category B Winner - Hackathon 2024"
+    },
   ];
 
   const previousWinners = [
@@ -97,7 +117,7 @@ const PreviousEdition = () => {
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-                      <p className="text-white text-lg">{image.caption}</p>
+                      <p className="text-white text-lg font-inter font-semibold">{image.caption}</p>
                     </div>
                   </div>
                 </div>

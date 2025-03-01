@@ -27,7 +27,7 @@ export const CountdownTimer : React.FC = () => {
   }, []);
 
   return (
-    <div className="max-w-4xl mx-auto mb-12 bg-peek/85 backdrop-blur-md p-6 rounded-xl text-white text-center shadow-lg">
+    <div className="max-w-4xl mx-auto mb-12 bg-peek/85 backdrop-blur-md p-6 rounded-xl text-white text-center shadow-lg animate-slide-down">
       <h3 className="text-2xl sm:text-3xl font-bold mb-4 font-Krona">Countdown to RIT-A-THON</h3>
       <div className="flex justify-center sm:gap-4 gap-1 text-3xl sm:text-5xl font-bold text-white">
         <div className="p-2 rounded-lg font-inter">

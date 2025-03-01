@@ -3,7 +3,7 @@ import { GraduationCap, User, Trophy, FileText, ExternalLink, BadgeInfo } from "
 
 const Categories: React.FC = () => {
   return (
-    <section id="categories" className="py-20 bg-white sm:h-screen h-auto flex items-center">
+    <section id="categories" className="py-20 my-10 bg-white sm:h-screen h-auto flex items-center">
       <div className="max-w-4xl mx-auto px-4">
         {/* Section Title */}
         <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center flex justify-center items-center gap-3 text-black font-Krona">
@@ -35,8 +35,9 @@ const Categories: React.FC = () => {
             </ul>
             <div className="mt-6">
               <a
-                href="#"
-                className="py-3 px-6 bg-purple-600 hover:bg-purple-700 rounded-lg transition-all shadow-lg flex justify-center gap-2 text-white font-medium"
+                href="https://docs.google.com/forms/d/1gOHH0N09cFxjf9LPyhHRbNYbvIFxXPGQ0-CC8QVN8mY/viewform"
+                className="py-3 px-6 bg-purple-600 hover:bg-purple-900 rounded-lg transition-all shadow-lg flex justify-center gap-2 text-white font-medium"
+                target="_blank"
               >
                 <Trophy className="w-5 h-5" /> Register for Category A 
                 <ExternalLink width={20}/>
@@ -67,7 +68,7 @@ const Categories: React.FC = () => {
             <div className="mt-6">
               <a
                 href="https://docs.google.com/forms/d/11PSHPYg96NbF7fCgEr8cUq5D2lSBbL4BO7XxJeWuTIs/viewform?edit_requested=true&pli=1"
-                className="py-3 px-6 bg-yellow-500 hover:bg-yellow-600 rounded-lg transition-all shadow-lg flex items-center justify-center gap-2 text-black font-medium"
+                className="py-3 px-6 bg-purple-600 hover:bg-purple-900 rounded-lg transition-all shadow-lg flex items-center justify-center gap-2 text-white font-medium"
                 target="_blank"
               >
                 <Trophy className="w-5 h-5" /> Register for Category B <ExternalLink width={20} />

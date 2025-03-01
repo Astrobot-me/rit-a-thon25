@@ -7,6 +7,7 @@ import {
   BadgeIndianRupee,
   Clock,
   ClipboardCheck,
+  BookAIcon,
 } from "lucide-react";
 
 const EventDetails: React.FC = () => {
@@ -29,7 +30,7 @@ const EventDetails: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 font-inter mt-8">
           <div className="space-y-6">
             {/* Date & Time */}
-            <div className="bg-peek p-6 rounded-lg shadow-xl flex items-center gap-4">
+            <div className="bg-peek p-6 rounded-lg hover:animate-float  duration-500 shadow-xl flex items-center gap-4">
               <CalendarDays className="text-white w-8 h-8" />
               <div>
                 <h3 className="text-xl font-bold mb-1 text-white">Date & Time</h3>
@@ -38,7 +39,7 @@ const EventDetails: React.FC = () => {
             </div>
 
             {/* Venue */}
-            <div className="bg-peek p-6 rounded-lg shadow-xl flex items-center gap-4">
+            <div className="bg-peek p-6 rounded-lg hover:animate-float duration-500 shadow-xl flex items-center gap-4">
               <MapPin className="text-white w-8 h-8" />
               <div>
                 <h3 className="text-xl font-bold mb-1 text-white">Venue</h3>
@@ -47,7 +48,7 @@ const EventDetails: React.FC = () => {
             </div>
 
             {/* Team Size */}
-            <div className="bg-peek p-6 rounded-lg shadow-xl flex items-center gap-4">
+            <div className="bg-peek p-6 rounded-lg hover:animate-float duration-500 shadow-xl flex items-center gap-4">
               <Users className="text-white w-8 h-8" />
               <div>
                 <h3 className="text-xl font-bold mb-1 text-white">Team Size</h3>
@@ -58,7 +59,7 @@ const EventDetails: React.FC = () => {
 
           <div className="space-y-6">
             {/* Registration Fee */}
-            <div className="bg-peek p-6 rounded-lg shadow-xl flex items-center gap-4">
+            <div className="bg-peek p-6 rounded-lg hover:animate-float duration-500 shadow-xl flex items-center gap-4">
               <BadgeIndianRupee className="text-white w-8 h-8" />
               <div>
                 <h3 className="text-xl font-bold mb-1 text-white">Registration Fee</h3>
@@ -67,7 +68,7 @@ const EventDetails: React.FC = () => {
             </div>
 
             {/* Last Date */}
-            <div className="bg-peek p-6 rounded-lg shadow-xl flex items-center gap-4">
+            <div className="bg-peek p-6 rounded-lg hover:animate-float duration-500 shadow-xl flex items-center gap-4">
               <Clock className="text-white w-8 h-8" />
               <div>
                 <h3 className="text-xl font-bold mb-1 text-white">Last Date</h3>
@@ -76,16 +77,23 @@ const EventDetails: React.FC = () => {
             </div>
 
             {/* Registration */}
-            <div className="bg-peek p-6 rounded-lg shadow-xl flex flex-col items-center">
+            <div className="bg-peek p-6 rounded-lg hover:animate-float duration-500 shadow-xl flex flex-col items-center space-y-2">
               <h3 className="text-xl font-bold mb-3 text-white flex items-center gap-3">
-                <ClipboardCheck className="text-purple-400 w-7 h-7" />
+                <ClipboardCheck className="text-white w-7 h-7" />
                 Registration
               </h3>
               <a
-                href="#"
-                className="text-center py-2 px-6 bg-white rounded-lg shadow-xl transition-colors flex items-center gap-2"
+                href="#categories"
+                className="text-center py-2 px-6 bg-white rounded-lg  duration-500 shadow-xl transition-colors flex items-center gap-2 "
               >
                 <ClipboardCheck className="w-5 h-5" /> Register Now
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1KcqCgw3WEJaHKPy9eEVPhB3zN_Wy7wC_/view"
+                className="text-center py-2 px-6 bg-white rounded-lg hover:animate-float duration-500 shadow-xl transition-colors flex items-center gap-2"
+                target="_blank"
+              >
+                <BookAIcon className="w-5 h-5" /> Download Brochure
               </a>
             </div>
           </div>
