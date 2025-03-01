@@ -69,7 +69,7 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, setIsMenuOpen }) => {
               </a>
             ))}
             <a
-              href="#register"
+              href="#categories"
               className="block py-2 px-4 font-Krona text-white bg-peek rounded-lg transition-colors text-center mt-4"
               onClick={() => setIsMenuOpen(false)}
             >
