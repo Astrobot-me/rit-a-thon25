@@ -9,7 +9,7 @@ function Hero(): React.ReactNode {
         <section className="w-full min-h-screen mt-10 py-10 flex flex-col items-center bg-pamplet overflow-hidden relative">
 
 
-            <div className="flex flex-col lg:flex-row w-full sm:mt-5 mt-10 mb-10 lg:px-20 px-4 items-center font-Krona overflow-hidden max-w-screen">
+            <div className="flex flex-col-reverse lg:flex-row  w-full sm:mt-5 mt-10 mb-10 lg:px-20 px-4 items-center font-Krona overflow-hidden max-w-screen">
                 {/* Left Content */}
                 <div className="lg:w-1/2 w-full flex flex-col gap-8 text-center lg:text-left">
                     <div className="flex flex-col">
@@ -54,13 +54,13 @@ function Hero(): React.ReactNode {
                     </p>
                    
                     <a href="#about">
-                    <button className='p-3 sm:w-[70%] w-[85%] py-3 sm:mx-0 mx-auto  font-inter text-white font-normal rounded-2xl bg-peek flex flex-row justify-center gap-2 transition-colors hover:bg-blue-800'> <p>Learn more</p> <MoveRight /> </button>
+                    <button className='p-3 sm:w-[70%] w-[85%] py-3 sm:mt-10 mt-3 sm:mx-0 mx-auto  font-inter text-white font-normal rounded-2xl bg-peek flex flex-row justify-center gap-2 transition-colors hover:bg-blue-800'> <p>Learn more</p> <MoveRight /> </button>
                     </a>
                 </div>
 
                 {/* Right Image Section */}
-                <div className="lg:w-1/2 w-full flex justify-center mt-10 lg:mt-0">
-                    <img src={HeroPeople} alt="Hackathon Image" className="max-w-full w-[80%] sm:w-[60%] lg:w-[90%] h-auto object-contain animate-float" />
+                <div className="lg:w-1/2 w-full flex justify-center sm:mt-10 mt-5 lg:mt-0">
+                    <img src={HeroPeople} alt="Hackathon Image" className="max-w-full w-[100%] sm:w-[60%] lg:w-[90%] h-auto object-contain animate-float" />
                 </div>
             </div>
 

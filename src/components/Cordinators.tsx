@@ -2,19 +2,19 @@ import React from "react";
 import { Users, Briefcase, Code, UserCheck, Settings, Calendar, Megaphone, Package, Globe } from "lucide-react";
 
 const teamMembers = [
-  { name: "Dr. Abhay Bhatia", role: "Faculty Coordinator", icon: Briefcase, image: "https://placehold.co/400x400" },
-  { name: "Ridham Inani", role: "Student Coordinator", icon: UserCheck, image: "https://placehold.co/400x400" },
-  { name: "Priyanshu Gupta", role: "Student Coordinator", icon: UserCheck, image: "https://placehold.co/400x400" },
+  { name: "Dr. Abhay Bhatia", role: "Faculty Coordinator", icon: Briefcase, image: "https://i.imgur.com/EN8GAle.jpeg" },
+  { name: "Ridham Inani", role: "Student Coordinator", icon: UserCheck, image: "https://i.imgur.com/zmnH0o3.jpeg" },
+  { name: "Priyanshu Gupta", role: "Student Coordinator", icon: UserCheck, image: "https://i.imgur.com/zTNN1IQ.jpeg" },
   { name: "Sneha Agarwal", role: "Student Coordinator", icon: UserCheck, image: "https://i.imgur.com/ui4gfvh.jpeg" },
-  { name: "Riddhi Bansal", role: "Student Coordinator", icon: UserCheck, image: "https://placehold.co/400x400" },
-  { name: "Shivam Shyam", role: "Student Coordinator", icon: UserCheck, image: "https://placehold.co/400x400" },
-  { name: "Aditya Raj", role: "Website Architect/ Student Coordinator", icon: Code, image: "https://i.imgur.com/oMS3a3U.jpeg" },
+  { name: "Riddhi Bansal", role: "Student Coordinator", icon: UserCheck, image: "https://i.imgur.com/C1DkBQK.jpeg" },
+  { name: "Shivam Shyam", role: "Student Coordinator", icon: UserCheck, image: "https://i.imgur.com/Fr5PqUN.jpeg" },
+  { name: "Aditya Raj", role: "Website Architect/ Student Coordinator", icon: Code, image: "https://i.imgur.com/JtKyaO3.jpeg" },
   { name: "Harsh Raj Shukla", role: "Student Coordinator", icon: UserCheck, image: "https://i.imgur.com/EA10plK.jpeg" },
   { name: "Ashwani Raj", role: "Student Coordinator", icon: UserCheck, image: "https://i.imgur.com/Y4FS5lf.jpeg" },
-  { name: "Harshit Upadhayay", role: "Student Coordinator", icon: UserCheck, image: "https://placehold.co/400x400" },
-  { name: "Muskan Singh", role: "Student Coordinator", icon: UserCheck, image: "https://placehold.co/400x400" },
+  { name: "Harshit Upadhayay", role: "Student Coordinator", icon: UserCheck, image: "https://i.imgur.com/FnHScaV.jpeg" },
+  { name: "Muskan Singh", role: "Student Coordinator", icon: UserCheck, image: "https://i.imgur.com/n9K9For.jpeg" },
   { name: "Priyanshu Roushan", role: "Student Coordinator", icon: UserCheck, image: "https://i.imgur.com/3aaVhXI.jpeg" },
-  { name: "Malashree Bhattacharjee", role: "Student Coordinator", icon: UserCheck, image: "https://placehold.co/400x400" },
+  { name: "Malashree Bhattacharjee", role: "Student Coordinator", icon: UserCheck, image: "https://i.imgur.com/c231czU.jpeg" },
   
 ];
 

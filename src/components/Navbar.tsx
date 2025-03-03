@@ -40,7 +40,7 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, setIsMenuOpen }) => {
             ))}
             <a
               href="#categories"
-              className="px-4 py-2 bg-peek font-Krona text-sm hover:bg-white hover:text-black rounded-lg transition-colors "
+              className="px-4 py-2 bg-peek font-Krona text-sm text-white hover:bg-white hover:text-black rounded-lg transition-colors "
             >
               Register Now
             </a>
