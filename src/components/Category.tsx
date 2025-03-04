@@ -59,10 +59,10 @@ const Categories: React.FC = () => {
                 <FileText className=" w-5 h-5" /> B.Tech
               </li>
               <li className="flex items-center gap-2">
-                <FileText className=" w-5 h-5" /> MBA
+                <FileText className=" w-5 h-5" /> MBA (Including 1st & 2nd Year)
               </li>
               <li className="flex items-center gap-2">
-                <FileText className=" w-5 h-5" /> MCA
+                <FileText className=" w-5 h-5" /> MCA (Including 1st & 2nd Year)
               </li>
             </ul>
             <div className="mt-6">
