@@ -60,10 +60,10 @@ const Rules: React.FC = () => {
 
                     
                 </div>
-                <p className="text-center bg-peek/40 rounded-xl p-4 text-white mt-10 flex sm:flex-row flex-col justify-center items-center gap-2 sm:text-md text-sm font-inter font-normal">
+                <div className="text-center bg-peek/40 rounded-xl p-4 text-white mt-10 flex sm:flex-row flex-col justify-center items-center gap-2 sm:text-md text-sm font-inter font-normal">
                         <BadgeInfo className="text-peek w-28 drop-shadow-lg" />
                         <p> These are some madotory rules to follow and administration is not limited to them only </p>
-                </p>
+                </div>
             </div>
         </section>
     );

@@ -55,13 +55,13 @@ const Judging = () => {
           ))}
         </div>
 
-        <p className="text-center bg-pamplet/20 rounded-xl p-4 text-black mt-10 flex sm:flex-row flex-col items-center gap-2 sm:text-lg text-md font-inter font-normal">
+        <div className="text-center bg-pamplet/20 rounded-xl p-4 text-black mt-10 flex sm:flex-row flex-col items-center gap-2 sm:text-lg text-md font-inter font-normal">
           <BadgeInfo className="text-yellow-400 w-28 drop-shadow-lg" />
          <p className="sm:px-28 px-0"> Each Criteria holds <span className="font-bold"> 25% Weightage</span>
          <br></br>
          <span className="text-sm italic">The decision of the judges will be final and binding</span>
          </p>
-        </p>
+        </div>
       </div>
       
     </section>

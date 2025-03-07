@@ -78,10 +78,10 @@ const Categories: React.FC = () => {
         </div>
 
         {/* Footer Note */}
-        <p className="text-center bg-pamplet/20 rounded-xl p-4 text-black mt-10 flex sm:flex-row flex-col justify-center items-center gap-2 sm:text-lg text-md font-inter font-normal">
+        <div className="text-center bg-pamplet/20 rounded-xl p-4 text-black mt-10 flex sm:flex-row flex-col justify-center items-center gap-2 sm:text-lg text-md font-inter font-normal">
           <BadgeInfo className="text-yellow-400 w-28 drop-shadow-lg" />
          <p> Separate <span className="font-bold">Problem statements</span> will be mailed to the <span className="font-bold">Team leaders</span>, 12 hours prior to the hackathon and <span className="font-bold">winners will be Separate for both the categories</span></p>
-        </p>
+        </div>
       </div>
     </section>
   );

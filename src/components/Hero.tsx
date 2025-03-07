@@ -29,7 +29,7 @@ function Hero(): React.ReactNode {
                             wrapper="h1"
                             cursor={true}
                             repeat={Infinity}
-                            className='text-red-600 text-4xl mt-5 sm:text-[70px]'
+                            className='inline-block text-red-600 text-4xl mt-5 sm:text-[70px]'
                             style={{ display: 'inline-block' }}
                             deletionSpeed={50}
                         />

@@ -2,16 +2,16 @@ import React, { useCallback, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { ChevronLeft, ChevronRight, Trophy, Users } from 'lucide-react';
-import IMG1 from "../resource/Compressed_Image/1.jpg"
-import IMG2 from "../resource/Compressed_Image/2.jpg"
-import IMG3 from "../resource/Compressed_Image/3.jpg"
-import IMG4 from "../resource/Compressed_Image/4.jpg"
-import IMG5 from "../resource/Compressed_Image/5.jpg"
-import IMG6 from "../resource/Compressed_Image/6.jpg"
-import IMG7 from "../resource/Compressed_Image/7.jpg"
-import IMG8 from "../resource/Compressed_Image/8.jpg"
-import IMG9 from "../resource/Compressed_Image/9.jpg"
-import IMG10 from "../resource/Compressed_Image/10.jpg"
+import IMG1 from "./../resource/Compressed_Image/1.jpg"
+import IMG2 from "./../resource/Compressed_Image/2.jpg"
+import IMG3 from "./../resource/Compressed_Image/3.jpg"
+import IMG4 from "./../resource/Compressed_Image/4.jpg"
+import IMG5 from "./../resource/Compressed_Image/5.jpg"
+import IMG6 from "./../resource/Compressed_Image/6.jpg"
+import IMG7 from "./../resource/Compressed_Image/7.jpg"
+import IMG8 from "./../resource/Compressed_Image/8.jpg"
+import IMG9 from "./../resource/Compressed_Image/9.jpg"
+import IMG10 from "./../resource/Compressed_Image/10.jpg"
 
 const PreviousEdition = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
