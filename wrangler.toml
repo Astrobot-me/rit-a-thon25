@@ -1,2 +1,3 @@
+name = "rit-a-thon25" 
 main = "./src/main.tsx"
 compatibility_date = "2025-03-07"
