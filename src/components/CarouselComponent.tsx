@@ -2,6 +2,16 @@ import React, { useCallback, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { ChevronLeft, ChevronRight, Trophy, Users } from 'lucide-react';
+import IMG1 from "../resource/Compressed_Image/1.jpg"
+import IMG2 from "../resource/Compressed_Image/2.jpg"
+import IMG3 from "../resource/Compressed_Image/3.jpg"
+import IMG4 from "../resource/Compressed_Image/4.jpg"
+import IMG5 from "../resource/Compressed_Image/5.jpg"
+import IMG6 from "../resource/Compressed_Image/6.jpg"
+import IMG7 from "../resource/Compressed_Image/7.jpg"
+import IMG8 from "../resource/Compressed_Image/8.jpg"
+import IMG9 from "../resource/Compressed_Image/9.jpg"
+import IMG10 from "../resource/Compressed_Image/10.jpg"
 
 const PreviousEdition = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
@@ -38,43 +48,43 @@ const PreviousEdition = () => {
 
   const previousEditionImages = [
     {
-      url: "https://i.imgur.com/jnK6SFE.jpeg",
+      url: IMG1,
       caption: "Saraswati Vandana - Hackathon 2024"
     },
     {
-      url: "https://i.imgur.com/DcOErXX.jpeg",
+      url: IMG2,
       caption: "Opening Ceremony - Hackathon 2024"
     },
     {
-      url: "https://i.imgur.com/G8TAUCK.jpeg",
+      url: IMG3,
       caption: "Coding through out the day - Hackathon 2024"
     },
     {
-      url: "https://i.imgur.com/GrrmZbi.jpeg",
+      url: IMG4,
       caption: "Hustlers Hustling - Hackathon 2024"
     },
     {
-      url: "https://i.imgur.com/rfoco4s.jpeg",
+      url: IMG5,
       caption: "Judges Evaluating - Hackathon 2024"
     },
     {
-      url: "https://i.imgur.com/rdsw7b5.jpeg",
+      url: IMG6,
       caption: "Particpants recieving tips & tricks from DEAN Acadmics to complete their Hacks  "
     },
     {
-      url: "https://i.imgur.com/Rqabsnc.jpeg",
+      url: IMG7,
       caption: "Judges Reviewing Hacks - Hackathon 2024"
     },
     {
-      url: "https://i.imgur.com/ZIaWMg0.jpeg",
+      url: IMG8,
       caption: "Final Evaluation Round - Hackathon 2024"
     },
     {
-      url: "https://i.imgur.com/71sn1En.jpeg",
+      url: IMG9,
       caption: "Category A Winner - Hackathon 2024"
     },
     {
-      url: "https://i.imgur.com/RJgBhEP.jpeg",
+      url: IMG10,
       caption: "Category B Winner - Hackathon 2024"
     },
   ];
