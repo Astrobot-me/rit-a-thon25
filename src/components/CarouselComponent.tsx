@@ -48,43 +48,43 @@ const PreviousEdition = () => {
 
   const previousEditionImages = [
     {
-      url: IMG1,
+      url: "public/carousel/1.jpg",
       caption: "Saraswati Vandana - Hackathon 2024"
     },
     {
-      url: IMG2,
+      url: "public/carousel/2.jpg",
       caption: "Opening Ceremony - Hackathon 2024"
     },
     {
-      url: IMG3,
+      url: "public/carousel/3.jpg",
       caption: "Coding through out the day - Hackathon 2024"
     },
     {
-      url: IMG4,
+      url: "public/carousel/4.jpg",
       caption: "Hustlers Hustling - Hackathon 2024"
     },
     {
-      url: IMG5,
+      url: "public/carousel/5.jpg",
       caption: "Judges Evaluating - Hackathon 2024"
     },
     {
-      url: IMG6,
+      url: "public/carousel/6.jpg",
       caption: "Particpants recieving tips & tricks from DEAN Acadmics to complete their Hacks  "
     },
     {
-      url: IMG7,
+      url: "public/carousel/7.jpg",
       caption: "Judges Reviewing Hacks - Hackathon 2024"
     },
     {
-      url: IMG8,
+      url: "public/carousel/8.jpg",
       caption: "Final Evaluation Round - Hackathon 2024"
     },
     {
-      url: IMG9,
+      url: "public/carousel/9.jpg",
       caption: "Category A Winner - Hackathon 2024"
     },
     {
-      url: IMG10,
+      url: "public/carousel/10.jpg",
       caption: "Category B Winner - Hackathon 2024"
     },
   ];
