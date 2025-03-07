@@ -11,11 +11,13 @@ import CarouselComponent from './components/CarouselComponent';
 import Coordinators from './components/Cordinators';
 import Contact from './components/ContactUs';
 import Footer from './components/Footer';
+import { Analytics } from "@vercel/analytics/react"
 
 function App(): React.ReactNode {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
+      <Analytics/>
       <section className='w-full h-auto' >
         <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}   />
         <Hero />
