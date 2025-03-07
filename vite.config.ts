@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base:"./",
   plugins: [react()],
-  assetsInclude: ['src/**/*.jpg']
+  assetsInclude: ['src/resource/Compressed_Image/*.jpg']
 })
