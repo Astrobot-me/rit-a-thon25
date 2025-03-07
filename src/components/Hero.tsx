@@ -60,12 +60,12 @@ function Hero(): React.ReactNode {
 
                 {/* Right Image Section */}
                 <div className="lg:w-1/2 w-full flex justify-center sm:mt-10 mt-5 lg:mt-0">
-                    <img src={HeroPeople} alt="Hackathon Image" className="max-w-full w-[100%] sm:w-[60%] lg:w-[90%] h-auto object-contain animate-float" />
+                    <img src="Heropeople.png" alt="Hackathon Image" className="max-w-full w-[100%] sm:w-[60%] lg:w-[90%] h-auto object-contain animate-float" />
                 </div>
             </div>
 
             {/* Star Image Positioned Properly */}
-            <img src={Star} alt="Decorative Star" className="sm:absolute sm:flex hidden  -bottom-24 sm:-bottom-32 -right-8 sm:-right-4 -rotate-12 max-w-[80%] sm:max-w-[100%] animate-spin" />
+            <img src="/star.png" alt="Decorative Star" className="sm:absolute sm:flex hidden  -bottom-24 sm:-bottom-32 -right-8 sm:-right-4 -rotate-12 max-w-[80%] sm:max-w-[100%] animate-spin" />
         </section>
     )
 }
