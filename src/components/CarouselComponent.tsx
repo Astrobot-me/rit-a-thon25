@@ -2,16 +2,16 @@ import React, { useCallback, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { ChevronLeft, ChevronRight, Trophy, Users } from 'lucide-react';
-// import IMG1 from "./../resource/Compressed_Image/1.jpg"
-// import IMG2 from "./../resource/Compressed_Image/2.jpg"
-// import IMG3 from "./../resource/Compressed_Image/3.jpg"
-// import IMG4 from "./../resource/Compressed_Image/4.jpg"
-// import IMG5 from "./../resource/Compressed_Image/5.jpg"
-// import IMG6 from "./../resource/Compressed_Image/6.jpg"
-// import IMG7 from "./../resource/Compressed_Image/7.jpg"
-// import IMG8 from "./../resource/Compressed_Image/8.jpg"
-// import IMG9 from "./../resource/Compressed_Image/9.jpg"
-// import IMG10 from "./../resource/Compressed_Image/10.jpg"
+// import IMG1 from "./../resource/Compressed_Image/1.jpeg"
+// import IMG2 from "./../resource/Compressed_Image/2.jpeg"
+// import IMG3 from "./../resource/Compressed_Image/3.jpeg"
+// import IMG4 from "./../resource/Compressed_Image/4.jpeg"
+// import IMG5 from "./../resource/Compressed_Image/5.jpeg"
+// import IMG6 from "./../resource/Compressed_Image/6.jpeg"
+// import IMG7 from "./../resource/Compressed_Image/7.jpeg"
+// import IMG8 from "./../resource/Compressed_Image/8.jpeg"
+// import IMG9 from "./../resource/Compressed_Image/9.jpeg"
+// import IMG10 from "./../resource/Compressed_Image/10.jpeg"
 
 const PreviousEdition = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
@@ -48,43 +48,43 @@ const PreviousEdition = () => {
 
   const previousEditionImages = [
     {
-      url: "/carousel/1.jpg",
+      url: "/compressed/1.jpeg",
       caption: "Saraswati Vandana - Hackathon 2024"
     },
     {
-      url: "/carousel/2.jpg",
+      url: "/compressed/2.jpeg",
       caption: "Opening Ceremony - Hackathon 2024"
     },
     {
-      url: "/carousel/3.jpg",
+      url: "/compressed/3.jpeg",
       caption: "Coding through out the day - Hackathon 2024"
     },
     {
-      url: "/carousel/4.jpg",
+      url: "/compressed/4.jpeg",
       caption: "Hustlers Hustling - Hackathon 2024"
     },
     {
-      url: "/carousel/5.jpg",
+      url: "/compressed/5.jpeg",
       caption: "Judges Evaluating - Hackathon 2024"
     },
     {
-      url: "/carousel/6.jpg",
+      url: "/compressed/6.jpeg",
       caption: "Particpants recieving tips & tricks from DEAN Acadmics to complete their Hacks  "
     },
     {
-      url: "/carousel/7.jpg",
+      url: "/compressed/7.jpeg",
       caption: "Judges Reviewing Hacks - Hackathon 2024"
     },
     {
-      url: "/carousel/8.jpg",
+      url: "/compressed/8.jpeg",
       caption: "Final Evaluation Round - Hackathon 2024"
     },
     {
-      url: "/carousel/9.jpg",
+      url: "/compressed/9.jpeg",
       caption: "Category A Winner - Hackathon 2024"
     },
     {
-      url: "/carousel/10.jpg",
+      url: "/compressed/10.jpeg",
       caption: "Category B Winner - Hackathon 2024"
     },
   ];
