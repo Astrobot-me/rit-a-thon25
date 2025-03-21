@@ -37,7 +37,7 @@ function Hero(): React.ReactNode {
                     </div>
 
                     <p className="flex sm:flex-row justify-center lg:justify-start items-center sm:gap-2 gap-0 text-md sm:text-2xl text-white animate-fade-in  ">
-                        <Circle className="text-red-600" width={20} /> 30 Hours Long Intra Hackathon
+                        <Circle className="text-red-600" width={20} /> 24 Hours Long Intra Hackathon
                     </p>
 
                     <div className="flex flex-col gap-4 animate-slide-down">
