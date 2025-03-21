@@ -6,7 +6,7 @@ const About: React.FC = () => {
       <div className="max-w-3xl mx-auto text-center my-10 animate-slide-down">
         <h2 className="text-2xl sm:text-3xl font-bold mb-8 font-Krona">About RIT-A-THON</h2>
         <p className="text-black mb-8 sm:px-0 px-7 leading-relaxed">
-          RIT-A-THON is an <span className='font-bold'> intra-level 30-hour hackathon organized by the Department of Computer Science & Engineering at Roorkee Institute of Technology </span>. This event brings together innovative minds from all departments including <span className='font-bold'> B.Tech, MBA, BBA, and MCA</span> to collaborate, create, and compete in a challenging environment.
+          RIT-A-THON is an <span className='font-bold'> intra-level 24-hours hackathon organized by the Department of Computer Science & Engineering at Roorkee Institute of Technology </span>. This event brings together innovative minds from all departments including <span className='font-bold'> B.Tech, MBA, BBA, and MCA</span> to collaborate, create, and compete in a challenging environment.
         </p>
         {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:px-0 px-7">
           <div className="bg-peek p-6 rounded-lg backdrop-blur-sm shadow-xl">
